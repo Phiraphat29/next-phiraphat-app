@@ -1,14 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Libre_Franklin } from "next/font/google";
 import "./globals.css";
+import Profile from "@/components/Profile";
+import NavVerticalBar from "@/components/NavVerticalBar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const libreFranklin = Libre_Franklin({
+  variable: "--font-libre-franklin",
   subsets: ["latin"],
 });
 
@@ -24,10 +21,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <head>
+        <script
+          src="https://kit.fontawesome.com/2d05e739d6.js"
+          crossOrigin="anonymous"
+        />
+      </head>
+      <body className={`${libreFranklin.className} antialiased text-white `}>
+        <div className="flex flex-row justify-center gap-4 p-18">
+          <Profile />
+
+          {children}
+          <NavVerticalBar />
+        </div>
       </body>
     </html>
   );
