@@ -8,7 +8,7 @@ export default function page() {
         <span className="text-orange-500 text-2xl font-bold">Me</span>
         <br />
         <br />
-        <h2 className="text-white text-lg mb-8">Let's get in touch!</h2>
+        <h2 className="text-white text-lg mb-8">Let&apos;s get in touch!</h2>
 
         <div className="grid grid-cols-2 gap-8 max-w-4xl">
           {/* Left Column */}

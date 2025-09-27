@@ -25,6 +25,7 @@ export default function RootLayout({
         <script
           src="https://kit.fontawesome.com/2d05e739d6.js"
           crossOrigin="anonymous"
+          async
         />
       </head>
       <body className={`${libreFranklin.className} antialiased text-white `}>

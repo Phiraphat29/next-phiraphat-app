@@ -13,7 +13,7 @@ export default function page() {
           Manage Task App - fullstack web development
         </h2>
         <p className="text-sm mb-4 text-white/50">
-          Here's my latest project built with Next.js and Laravel, using
+          Here&apos;s my latest project built with Next.js and Laravel, using
           TailwindCSS on the front-end. Watch the video to see the responsive
           landing page in action!
         </p>
