@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Profile() {
   return (
-    <div className="flex flex-col items-center bg-zinc-800 rounded-xl px-4 py-2 w-fit h-fit">
+    <div className="flex flex-col items-center bg-zinc-800 rounded-xl px-4 py-2 w-auto h-fit">
       <div className="w-full">
         <span className="text-2xl text-orange-500">P</span>
         <span className="text-white">hiraphat</span>
